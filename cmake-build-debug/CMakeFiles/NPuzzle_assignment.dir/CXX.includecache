@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/AStarSearch.h
+Node.h
+F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/Node.h
+set
+-
+
+F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/Node.h
+iostream
+-
+iomanip
+-
+string
+-
+vector
+-
+map
+-
+queue
+-
+algorithm
+-
+cmath
+-
+cstdlib
+-
+cstring
+-
+
+F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/npuzzle.cpp
+chrono
+-
+iostream
+-
+Node.h
+F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/Node.h
+AStarSearch.h
+F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/AStarSearch.h
+

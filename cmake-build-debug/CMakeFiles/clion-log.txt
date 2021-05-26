@@ -1,0 +1,4 @@
+"F:\Software\CPlus\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" F:\Program\CPlusProject\CLionWorkspace\NPuzzle_assignment
+-- Configuring done
+-- Generating done
+-- Build files have been written to: F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug

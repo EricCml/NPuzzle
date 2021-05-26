@@ -1,0 +1,119 @@
+Start: 
+  5   1   7 
+  4   3   6 
+  0   2   8 
+ ----------- 
+Goal: 
+  1   2   3 
+  4   0   5 
+  6   7   8 
+ ----------- 
+# Misplaced Tiles Heuristics: 
+No of Steps: 20
+No of Nodes Expanded: 2921
+No of Nodes Opened: 4816
+No of Nodes Pushed: 4816
+Max Depth Reached: 20
+Execution Time: 35.022ms
+
+# Manhattan Distance Heuristics: 
+No of Steps: 20
+No of Nodes Expanded: 133
+No of Nodes Opened: 227
+No of Nodes Pushed: 227
+Max Depth Reached: 20
+Execution Time: 0.995ms
+
+# Linear Conflicts Heuristics: 
+No of Steps: 20
+No of Nodes Expanded: 97
+No of Nodes Opened: 166
+No of Nodes Pushed: 166
+Max Depth Reached: 20
+Execution Time: 0.998ms
+
+The detailed steps:
+  5   1   7 
+  4   3   6 
+  0   2   8 
+ ----------- 
+  5   1   7 
+  0   3   6 
+  4   2   8 
+ ----------- 
+  0   1   7 
+  5   3   6 
+  4   2   8 
+ ----------- 
+  1   0   7 
+  5   3   6 
+  4   2   8 
+ ----------- 
+  1   3   7 
+  5   0   6 
+  4   2   8 
+ ----------- 
+  1   3   7 
+  5   2   6 
+  4   0   8 
+ ----------- 
+  1   3   7 
+  5   2   6 
+  4   8   0 
+ ----------- 
+  1   3   7 
+  5   2   0 
+  4   8   6 
+ ----------- 
+  1   3   0 
+  5   2   7 
+  4   8   6 
+ ----------- 
+  1   0   3 
+  5   2   7 
+  4   8   6 
+ ----------- 
+  1   2   3 
+  5   0   7 
+  4   8   6 
+ ----------- 
+  1   2   3 
+  5   8   7 
+  4   0   6 
+ ----------- 
+  1   2   3 
+  5   8   7 
+  4   6   0 
+ ----------- 
+  1   2   3 
+  5   8   0 
+  4   6   7 
+ ----------- 
+  1   2   3 
+  5   0   8 
+  4   6   7 
+ ----------- 
+  1   2   3 
+  0   5   8 
+  4   6   7 
+ ----------- 
+  1   2   3 
+  4   5   8 
+  0   6   7 
+ ----------- 
+  1   2   3 
+  4   5   8 
+  6   0   7 
+ ----------- 
+  1   2   3 
+  4   5   8 
+  6   7   0 
+ ----------- 
+  1   2   3 
+  4   5   0 
+  6   7   8 
+ ----------- 
+  1   2   3 
+  4   0   5 
+  6   7   8 
+ ----------- 

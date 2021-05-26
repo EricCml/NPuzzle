@@ -1,0 +1,122 @@
+Start: 
+  1   2   0 
+  4   3   8 
+  6   7   5 
+ ----------- 
+Goal: 
+  1   2   3 
+  4   0   5 
+  6   7   8 
+ ----------- 
+
+# Misplaced Tiles Heuristics: 
+No of Steps: 16
+No of Nodes Expanded: 659
+No of Nodes Opened: 1089
+No of Nodes Pushed: 1088
+Max Depth Reached: 16
+Execution Time: 8.002ms
+
+# Manhattan Distance Heuristics: 
+No of Steps: 16
+No of Nodes Expanded: 249
+No of Nodes Opened: 420
+No of Nodes Pushed: 419
+Max Depth Reached: 16
+Execution Time: 3.001ms
+
+# Linear Conflicts Heuristics: 
+No of Steps: 16
+No of Nodes Expanded: 147
+No of Nodes Opened: 246
+No of Nodes Pushed: 246
+Max Depth Reached: 16
+Execution Time: 1.001ms
+
+共16步
+初始状态
+  1   2   0 
+  4   3   8 
+  6   7   5 
+ ----------- 
+第1步
+  1   2   8 
+  4   3   0 
+  6   7   5 
+ ----------- 
+第2步
+  1   2   8 
+  4   3   5 
+  6   7   0 
+ ----------- 
+第3步
+  1   2   8 
+  4   3   5 
+  6   0   7 
+ ----------- 
+第4步
+  1   2   8 
+  4   0   5 
+  6   3   7 
+ ----------- 
+第5步
+  1   2   8 
+  4   5   0 
+  6   3   7 
+ ----------- 
+第6步
+  1   2   0 
+  4   5   8 
+  6   3   7 
+ ----------- 
+第7步
+  1   0   2 
+  4   5   8 
+  6   3   7 
+ ----------- 
+第8步
+  1   5   2 
+  4   0   8 
+  6   3   7 
+ ----------- 
+第9步
+  1   5   2 
+  4   3   8 
+  6   0   7 
+ ----------- 
+第10步
+  1   5   2 
+  4   3   8 
+  6   7   0 
+ ----------- 
+第11步
+  1   5   2 
+  4   3   0 
+  6   7   8 
+ ----------- 
+第12步
+  1   5   2 
+  4   0   3 
+  6   7   8 
+ ----------- 
+第13步
+  1   0   2 
+  4   5   3 
+  6   7   8 
+ ----------- 
+第14步
+  1   2   0 
+  4   5   3 
+  6   7   8 
+ ----------- 
+第15步
+  1   2   3 
+  4   5   0 
+  6   7   8 
+ ----------- 
+目标状态
+  1   2   3 
+  4   0   5 
+  6   7   8 
+ ----------- 
+
