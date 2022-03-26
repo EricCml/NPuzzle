@@ -1,59 +1,140 @@
-[N-puzzle](https://en.wikipedia.org/wiki/15_puzzle) problem is one of the well-known classical problems in artificial intelligence for modelling algorithm using heuristic.  
-  
-Problem description is as follows :  
-* Given a k x k grid with k<sup>2</sup>-1 (=n) blocks each labeled with 1 through n and a blank one.  
-Our goal is to rearrange the blocks so that they are in order, using fewest number of moves possible.  
-A move can be either a horizontal or vertical sliding of block. 
-    
-This C++ implementation uses A* search to solve this problem using heuristic. The success of this approach largely depends on the choice of heuristic.  
-  
-  
-Here three heuristics have been considered.  
-    
-* **Hamming Distance** : The number of blocks in the wrong position (excluding the blank)
-  
-* **Manhattan distance**: The sum of the Manhattan distances (sum of the vertical and
-horizontal distance) from the blocks to their goal positions.  
-  
-* **Linear Conflict**: Two tiles t<sub>j</sub> and t<sub>k</sub> are in a linear conflict if t<sub>j</sub> and t<sub>k</sub> are the same line, the
-goal positions of t<sub>j</sub> and t<sub>k</sub> are both in that line,t<sub>j</sub> is to the right of t<sub>k</sub> , and goal position of t<sub>j</sub>
-is to the left of the goal position of t<sub>k</sub> . Here line indicated both rows and columns. The
-linear conflict heuristic is calculated as Manhattan distance + 2*(Linear conflicts).
-  
-**Hamming distance heuristic may require a lot of memory even over 5GB for solutions having significant number of steps. Better not to run hamming distance heuristic for 4x4 or larger boards.  
-You can change this in "main.cpp".**
-  
-  
-Procedure to run this Implementation:  
-  
-**Step 1**:  
-  
-    Input format:(in "in.txt")  
-    
-    Line 1 : n  
-    Next put initial k X k board configuration with numbers from 1 to n and a single 0 that denotes blank
-  
->An input:  
->> 3  
->> 1 5 0  
->> 7 6 4  
->> 2 3 8  
-    
+# N-puzzle问题
 
-**Step 2**:  
-  
-    Compile "main.cpp" and then run the executable    
-    or  
-    You can open the whole folder as a CLion Project.  
-  
-**Step 3**:  
-  
-    You will find the output in "out.txt".  
-  
-  
-Some sample inputs have been provided in "in.txt"  
-  
-**This implementation requires minimum C++11**
-  
-    
-    
+## 项目环境
+
+操作系统：Windows 10 64位
+
+编程语言：C++ 14、Python 3.8
+
+编译器：CLion 2020.3 x64 
+
+## 项目文件说明
+
+项目目录结构如下：
+
+├─AStarSearch.cpp ------ // A*算法类实现
+
+├─AStarSearch.h -------- // A*算法类定义
+
+├─CMakeLists.txt ------- // 编译文件
+
+├─generator.py --------- // 用例生成脚本
+
+├─Node.cpp ------------- // 节点类实现
+
+├─Node.h --------------- // 节点类定义
+
+├─npuzzle.cpp ---------- // 主程序
+
+├─test.cpp ------------- // 测试程序
+
+└─Testcase ------------- // 存放测试用例
+
+​    ├─Inputcase ---------- // 存放用例输入文件
+
+​    ├─Outcome ------------ // 存放结果输出文件
+
+​    └─Test_outcome ------- // 存放测试结果输出文件
+
+特别说明：C++所有程序只能有一个main函数，所以为了避免编译报错，运行主程序或测试程序之前请在编译文件中选择相应的指令（在`CMakeLists.txt`中将另外一个文件编译指令注释掉即可）。
+
+##  一、问题描述
+
+N-puzzle问题是人工智能领域使用启发式算法建模的经典问题之一。
+
+问题描述如下：给定一个 $k × k$ 的网格，其中 $k^2 - 1$ 个块分别用 $1$ 到 $n$ 和一个空白块标记。 
+
+目标是使用最少数量的移动来重新排列块，使它们井然有序。移动可以是块的水平或垂直滑动。
+
+## 二、启发式函数
+
+我们使用 $A^*$ 搜索来解决这个问题，这种方法的成功很大程度上取决于启发式的选择。我考虑了三种启发式函数，并对它们进行了比对分析。
+
+### 2.1 Misplaced Tiles(汉明距离)
+
+这是最简单的一种启发式，即统计错误放置的块的数目。这一启发式和汉明距离的概念相似。
+
+汉明距离是使用在数据传输差错控制编码里面的，汉明距离是一个概念，它表示两个（相同长度）字对应位不同的数量，我们以 $d(x,y)$ 表示两个字 $x,y$ 之间的汉明距离。对两个字符串进行异或运算，并统计结果为 1 的个数，那么这个数就是汉明距离。
+
+### 2.2 Manhattan Distance(曼哈顿距离)
+
+这是书上介绍的第二种启发式，即对每个块到它目标位置的曼哈顿距离进行求和。
+
+图中红线代表曼哈顿距离，绿色代表欧氏距离，也就是直线距离，而蓝色和黄色代表等价的曼哈顿距离。曼哈顿距离——两点在南北方向上的距离加上在东西方向上的距离，即
+$$
+d(i,j)=|x_i-x_j|+|y_i-y_j|
+$$
+![image-20220326190818806](https://s2.loli.net/2022/03/26/pXRuWCoPQ8tfcSJ.png)
+
+<div align="center">
+    <b>曼哈顿距离</b>
+</div>
+
+
+### 2.3 Linear Conflict(线性冲突)
+
+首先给出线性冲突的定义：当两个块 $t_j$ 和 $t_k$ 处于线性冲突时，如果 $t_j$ 和 $t_k$ 在同一条线上，则 $t_j$ 和 $t_k$ 的目标位置都在该线中，$t_j$ 在 $t_k$ 的右边，$t_j$ 的目标位置在    $t_k$ 的目标位置的左侧。这里的线既表示行也表示列。
+线性冲突启发式的计算公式为曼哈顿距离 + 2 × 线性冲突。
+
+### 2.4 三种启发式对比分析
+
+对于具有大量步骤的解决方案，汉明距离启发法可能需要大量内存，甚至超过5GB。最好不要对4×4或更大尺寸的板使用汉明距离启发式算法，所以本次对比分析主要选择了 3×3 和 4×4 的有解情况。
+
+为了方便测试，在`test.cpp`中设计了随机生成puzzle的功能，从众多测试结果中选择了两个典型的例子进行说明。
+
+#### （1）3×3有解
+
+![image-20220326190648469](https://s2.loli.net/2022/03/26/8XozJCk4DSmOtP3.png)
+
+<div align="center">
+    <b>3×3 puzzle</b>
+</div>
+
+
+| Heuristics              | Steps | Nodes Expanded | Nodes Opened | Nodes Pushed | Max Depth Reached | Execution Time(ms) |
+| ----------------------- | ----- | -------------- | ------------ | ------------ | ----------------- | ------------------ |
+| MisplacedTiles (h1)     | 28    | 69916          | 93175        | 93376        | 28                | 1147.58            |
+| Manhattan Distance (h2) | 28    | 6617           | 10345        | 10514        | 28                | 90.02              |
+| LinearConflicts (h3)    | 28    | 2931           | 4642         | 4718         | 28                | 38.002             |
+
+#### （2）4×4有解
+
+![image-20220326191128095](https://s2.loli.net/2022/03/26/OUNQrAFTBkch2gL.png)
+
+<div align="center">
+    <b>4×4 puzzle</b>
+</div>
+
+
+| Heuristics              | Steps | Nodes Expanded | Nodes Opened | Nodes Pushed | Max Depth Reached | Execution Time(ms) |
+| ----------------------- | ----- | -------------- | ------------ | ------------ | ----------------- | ------------------ |
+| MisplacedTiles (h1)     | 28    | 513013         | 989569       | 990725       | 28                | 15829.6            |
+| Manhattan Distance (h2) | 28    | 13425          | 26152        | 26403        | 28                | 332.076            |
+| LinearConflicts (h3)    | 28    | 4495           | 8707         | 8779         | 28                | 96.035             |
+
+通过观察上述两个典型例子及许多实验可发现：
+
+1. 随着解决步骤的增加或棋盘大小的增大，h1消耗的内存急剧增加，所需时间也最长，在许多需要较多步骤的情况下会空间溢出。h2和h3则不会出现这种情况，且二者的时间开销和空间开销比h1好得多。
+2. h2和h3在解决步骤较少的情况下，二者的差异并不明显。当解决步骤的增加和棋盘大小的增大时，h3所需的时间开销和空间开销会比h2小。
+
+## 三、技巧和难题
+
+### 3.1 技巧
+
+#### （1）使用动态数组
+
+在程序的很多地方需要用到数组存放数据，而且无法提前预知需要的数组规模有多大，为了最大程度地节约空间，使用了C++中vector库，即容器。vector之所以被认为是一个容器，是因为它能够像容器一样存放各种类型的对象，简单地说，vector是一个能够存放任意类型的动态数组，能够增加和压缩数据。
+
+同时对已提前预知容量的数组，仍采用动态数组分配的方式，即C++运算符new/delete。
+
+#### （2）函数传参传引用 
+
+函数传参有三种方式：传值、传地址和传引用。在设计实现时，对节点信息封装成了类，在各个操作函数传参时都使用了传引用方式，既避免函数形参拷贝增加空间开销，又能直接修改实参的值，同时引用比指针用起来相对更安全。
+
+### 3.2 难题
+
+#### 手动寻找测试用例太麻烦
+
+用来测试的puzzle例子太少且大多都是解题步骤较少的类型。针对这一问题设计了一个python脚本（`generator.py`）来专门生成测试用例。但每次都要先运行python脚本得到测试用例后再手动复制到读入文件，运行C++程序后才能得到结果。
+
+为了使得测试流程更简化，用C++实现上述python脚本的功能。在`test.cpp`中有体现。
