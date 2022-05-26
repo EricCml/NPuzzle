@@ -1,17 +1,25 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
   "CXX"
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/AStarSearch.cpp" "F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/CMakeFiles/NPuzzle_assignment.dir/AStarSearch.cpp.obj"
-  "F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/Node.cpp" "F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/CMakeFiles/NPuzzle_assignment.dir/Node.cpp.obj"
-  "F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/npuzzle.cpp" "F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/CMakeFiles/NPuzzle_assignment.dir/npuzzle.cpp.obj"
+  "F:/Program/CPlusProjects/CLionWorkspace/npuzzle/AStarSearch.cpp" "F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/CMakeFiles/NPuzzle_assignment.dir/AStarSearch.cpp.obj"
+  "F:/Program/CPlusProjects/CLionWorkspace/npuzzle/Node.cpp" "F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/CMakeFiles/NPuzzle_assignment.dir/Node.cpp.obj"
+  "F:/Program/CPlusProjects/CLionWorkspace/npuzzle/npuzzle.cpp" "F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/CMakeFiles/NPuzzle_assignment.dir/npuzzle.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
   )
 
 # Targets to which this target links.

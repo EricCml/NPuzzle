@@ -8,94 +8,94 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug"/>
+				<Option working_dir="F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="F:/Software/CPlus/MinGW64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="F:/Software/CPlus/MinGW64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/Software/CPlus/MinGW64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/Software/CPlus/MinGW64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="F:/Software/CPlus/MinGW64/mingw64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="F:/Software/CPlus/MinGW64/mingw64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/Software/CPlus/MinGW64/mingw64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/Software/CPlus/MinGW64/mingw64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="NPuzzle_assignment">
-				<Option output="F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/NPuzzle_assignment.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug"/>
+				<Option output="F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/NPuzzle_assignment.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="F:/Software/CPlus/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="F:/Software/CPlus/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="F:/Software/CPlus/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="F:/Software/CPlus/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
-					<Add directory="F:/Software/CPlus/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="F:/Software/CPlus/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="F:/Software/CPlus/MinGW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="F:/Software/CPlus/MinGW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="F:/Software/CPlus/MinGW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="F:/Software/CPlus/MinGW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="F:/Software/CPlus/MinGW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="F:/Software/CPlus/MinGW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="F:/Software/CPlus/MinGW64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 NPuzzle_assignment"/>
-					<CompileFile command="F:/Software/CPlus/MinGW64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/Software/CPlus/MinGW64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/Software/CPlus/MinGW64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="F:/Software/CPlus/MinGW64/mingw64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/Makefile&quot;  VERBOSE=1 NPuzzle_assignment"/>
+					<CompileFile command="F:/Software/CPlus/MinGW64/mingw64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/Software/CPlus/MinGW64/mingw64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/Software/CPlus/MinGW64/mingw64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="NPuzzle_assignment/fast">
-				<Option output="F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/NPuzzle_assignment.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug"/>
+				<Option output="F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/NPuzzle_assignment.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="F:/Software/CPlus/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="F:/Software/CPlus/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="F:/Software/CPlus/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="F:/Software/CPlus/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
-					<Add directory="F:/Software/CPlus/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="F:/Software/CPlus/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="F:/Software/CPlus/MinGW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="F:/Software/CPlus/MinGW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="F:/Software/CPlus/MinGW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="F:/Software/CPlus/MinGW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="F:/Software/CPlus/MinGW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="F:/Software/CPlus/MinGW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="F:/Software/CPlus/MinGW64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 NPuzzle_assignment/fast"/>
-					<CompileFile command="F:/Software/CPlus/MinGW64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/Software/CPlus/MinGW64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/Software/CPlus/MinGW64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="F:/Software/CPlus/MinGW64/mingw64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/Makefile&quot;  VERBOSE=1 NPuzzle_assignment/fast"/>
+					<CompileFile command="F:/Software/CPlus/MinGW64/mingw64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/Software/CPlus/MinGW64/mingw64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/Software/CPlus/MinGW64/mingw64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug"/>
+				<Option working_dir="F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="F:/Software/CPlus/MinGW64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="F:/Software/CPlus/MinGW64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/Software/CPlus/MinGW64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/Software/CPlus/MinGW64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="F:/Software/CPlus/MinGW64/mingw64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="F:/Software/CPlus/MinGW64/mingw64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/Software/CPlus/MinGW64/mingw64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/Software/CPlus/MinGW64/mingw64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug"/>
+				<Option working_dir="F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="F:/Software/CPlus/MinGW64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="F:/Software/CPlus/MinGW64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/Software/CPlus/MinGW64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/Software/CPlus/MinGW64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="F:/Software/CPlus/MinGW64/mingw64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="F:/Software/CPlus/MinGW64/mingw64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/Software/CPlus/MinGW64/mingw64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/Software/CPlus/MinGW64/mingw64/bin/mingw32-make.exe -f &quot;F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/AStarSearch.cpp">
+		<Unit filename="F:/Program/CPlusProjects/CLionWorkspace/npuzzle/AStarSearch.cpp">
 			<Option target="NPuzzle_assignment"/>
 		</Unit>
-		<Unit filename="F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/AStarSearch.h">
+		<Unit filename="F:/Program/CPlusProjects/CLionWorkspace/npuzzle/AStarSearch.h">
 			<Option target="NPuzzle_assignment"/>
 		</Unit>
-		<Unit filename="F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/Node.cpp">
+		<Unit filename="F:/Program/CPlusProjects/CLionWorkspace/npuzzle/Node.cpp">
 			<Option target="NPuzzle_assignment"/>
 		</Unit>
-		<Unit filename="F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/Node.h">
+		<Unit filename="F:/Program/CPlusProjects/CLionWorkspace/npuzzle/Node.h">
 			<Option target="NPuzzle_assignment"/>
 		</Unit>
-		<Unit filename="F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/npuzzle.cpp">
+		<Unit filename="F:/Program/CPlusProjects/CLionWorkspace/npuzzle/npuzzle.cpp">
 			<Option target="NPuzzle_assignment"/>
 		</Unit>
-		<Unit filename="F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/CMakeLists.txt">
+		<Unit filename="F:/Program/CPlusProjects/CLionWorkspace/npuzzle/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

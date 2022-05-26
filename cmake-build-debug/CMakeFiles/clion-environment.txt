@@ -1,4 +1,4 @@
-ToolSet: w64 6.0 (local)@F:\Software\CPlus\MinGW64
+ToolSet: w64 6.0 (local)@F:\Software\CPlus\MinGW64\mingw64
 Options: 
 
 Options:

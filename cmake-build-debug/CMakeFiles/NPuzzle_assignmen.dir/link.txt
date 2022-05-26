@@ -1,3 +1,0 @@
-"F:\Software\CPlus\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\NPuzzle_assignmen.dir/objects.a
-F:\Software\CPlus\MinGW64\bin\ar.exe cr CMakeFiles\NPuzzle_assignmen.dir/objects.a @CMakeFiles\NPuzzle_assignmen.dir\objects1.rsp
-F:\Software\CPlus\MinGW64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\NPuzzle_assignmen.dir/objects.a -Wl,--no-whole-archive -o NPuzzle_assignmen.exe -Wl,--out-implib,libNPuzzle_assignmen.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\NPuzzle_assignmen.dir\linklibs.rsp

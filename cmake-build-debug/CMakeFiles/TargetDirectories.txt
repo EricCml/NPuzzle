@@ -1,3 +1,3 @@
-F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/CMakeFiles/NPuzzle_assignment.dir
-F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/CMakeFiles/edit_cache.dir
-F:/Program/CPlusProject/CLionWorkspace/NPuzzle_assignment/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/CMakeFiles/NPuzzle_assignment.dir
+F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/Program/CPlusProjects/CLionWorkspace/npuzzle/cmake-build-debug/CMakeFiles/rebuild_cache.dir
